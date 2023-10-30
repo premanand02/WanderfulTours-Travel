@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderful</title>
+     
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="Train_book.css">
+     <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <div id="loader"></div>
+
+  <nav>
+    <div class="left">
+        <a href="#">  <img src="Wanderful logo.png" alt="">
+        </a>
+        <div class="text"><h1>Wanderful </h1>
+          <p>TOURS AND TRAVELS</p>
+          </div>
+    </div>
+    <div class="right">
+        <label for="toggle" id="check"><iconify-icon icon="gg:menu-round" style="color: rgb(35, 34, 34);" width="30" height="30"></iconify-icon></label>
+        <input type="checkbox" name="toggle" id="toggle">
+        <ul class="list">
+            <li><a href="#page1" class="active">Home</a></li>
+            <li> <a href="#">about us</a></li>
+            <li> <a href="#page2">Our Service</a></li>
+            <li> <a href="#page3">Offers</a></li>
+            <li> <a href="#footer">Contact</a></li>
+            <!-- <li> <a href="/login.html">Login</a></li> -->
+        </ul>
+    </div>
+</nav>
+
+ 
+      <div class="main">
+        <div class="page1" id="page1">
+          <video  autoplay muted loop src= "WanderFullVideo.mp4" >   
+          </video>
+          <!-- <video  autoplay muted loop src= "backgroundVideo.mp4" >    -->
+          <!-- </video> -->
+        </div>
+          <!-- <div class="overlay1 ">
+            <img src="Wanderful logo.png" alt="">
+          </div> -->
+        
+          <div class="page2" id="page2">
+            <div class="allabout">
+              <div class="booknav">
+
+               <div class="plan1"   id="Navbox">
+                <!-- <a href="/"> -->
+                  <i class="fa-solid fa-plane"></i>
+                  <h5 id="Flight">Flight</h5>
+                <!-- </a> -->
+                 
+              </div>
+               <div  class="train1"  id="Navbox">
+                
+                  <i class="fa-solid fa-train-tram"></i>
+                  <h5 id="Train"> Train</h5>
+              
+               </div>
+               <div class="hotels"   id="Navbox">
+                
+                  <i class="fa-solid fa-hotel"></i>
+                  <h5 id="Hotels">Hotels</h5>
+               
+               </div>
+               <div class="Homestays_Villas"  id="Navbox">
+                
+                  <i class="fa-solid fa-house"></i>
+                  <h5 id="Home">Homestays <br> & Villas</h5>
+                
+               </div>
+               <div class="Holiday_Packages"  id="Navbox">
+                  
+                    <i class="fa-solid fa-umbrella"></i> 
+                    <h5 id="Holiday">Holiday <br> Packages</h5>
+                 
+                  </div>
+              </div>
+             <div class="bookpage">
+                
+    
+              <form action="" id="show1">
+          
+                <form action="">
+      
+                  <fieldset>
+                  <div class="box">
+                    <div class="box1">
+                        <label> Flights No. / Flight Name :-
+                            <input type="text" name="firstname" required /></label>
+                          <label>From :-
+                          <!-- <input type="From" name="lastname" required /> -->
+                          <input type="text" name="city" list="citynames"  placeholder="City Name / Country">
+            <datalist id="citynames">
+              <option value="Mumbai">
+              <option value="Bhopal">
+              <option value="Nagpur">
+              <option value="Indor">
+              <option value="Jablpur">
+              <option value="Chindwadha">
+              <option value="Harda">
+              <option value="Rani Kamlapati">
+              <option value="Ujjain">
+              <option value="Dehli">
+            </datalist>
+                          </label>
+                          <label>To :-
+                            <input type="text" name="city" list="citynames"    placeholder="City Name / Country">
+            <datalist id="citynames">
+              <option value="Mumbai">
+              <option value="Bhopal">
+              <option value="Nagpur">
+              <option value="Indor">
+              <option value="Jablpur">
+              <option value="Chindwadha">
+              <option value="Harda">
+              <option value="Rani Kamlapati">
+              <option value="Ujjain">
+              <option value="Dehli">
+            </datalist>
+                          </label>
+                       </div>
+                      <div class="box2">
+                        <label>Phone Number 
+                            <input type="text" name="phone" placeholder="Number" required />
+                            </label>
+                            
+                            <label>E-Mail Id
+                            <input type="email" name="email" placeholder="E-Mail Id" required />
+                            </label>
+                            <label>Departure
+                            <input type="date" name="check-out-date" placeholder="Date" required />
+                            </label>
+                      </div>
+                      
+                        <div class="box3">
+                            <label>  Flights Status
+                                <select name="accomodation">
+                                      <option value="">(select one)</option>
+                                      <option value="1"> Book Flights Tickets</option>
+                                      <option value="2">Check Available Flights</option>
+                                      <option value="4"> All Offers</option>
+                                    </select>
+                                </label>
+                             
+                                <label>Number of Member <input type="number" name="age" min="1" max="120" class="room"/>
+                                  <label> Select a Fare Type :
+                
+                                  <select name="accomodation">
+                                    <option value="">(select one)</option>
+                                    <option value="1"> Regular Fares
+                                  </option>
+                                    <option value="2"> Armed Forces Fares</option>
+                                    <option value="3"> Student
+                                        Fares</option>
+                                    <option value="4">Senior Citizen
+                                        Fares</option>
+                                    <option value="4"> Doctors & Nurses
+                                        Fares</option>
+                                    
+                                        </label>
+                                </label> 
+                               
+                        </div>
+                        <input type="submit" value="Submit" />
+            
+                       
+                  </div>
+                  </fieldset>
+                  
+                  
+                </form>
+                
+                
+              </form>
+              <form action="" id="show2">
+                <fieldset>
+                  <div class="box">
+                    <div class="box1">
+                        <label> Train No. / Train Name :-
+                            <input type="text" name="firstname" placeholder="Train No./Train Name" required /></label>
+                          <label>From :-
+                          <!-- <input type="From" name="lastname" required /> -->
+                          <input type="text"  placeholder="From Station" name="city" list="citynames">
+            <datalist id="citynames">
+              <option value="Mumbai">
+              <option value="Bhopal">
+              <option value="Nagpur">
+              <option value="Indor">
+              <option value="Jablpur">
+              <option value="Chindwadha">
+              <option value="Harda">
+              <option value="Rani Kamlapati">
+              <option value="Ujjain">
+              <option value="Dehli">
+            </datalist>
+                          </label>
+                          <label>To :-
+                            <input type="text" name="city"  placeholder="To Station" list="citynames">
+            <datalist id="citynames">
+              <option value="Mumbai">
+              <option value="Bhopal">
+              <option value="Nagpur">
+              <option value="Indor">
+              <option value="Jablpur">
+              <option value="Chindwadha">
+              <option value="Harda">
+              <option value="Rani Kamlapati">
+              <option value="Ujjain">
+              <option value="Dehli">
+            </datalist>
+                          </label>
+                       </div>
+                      <div class="box2">
+                        <label>Phone Number 
+                            <input type="text" name="phone"  placeholder="Number" required />
+                            </label>
+                            
+                            <label>E-Mail Id
+                            <input type="email" name="email"  placeholder="E-mail Id" required />
+                            </label>
+                            <label>Check-out Date
+                            <input type="date" name="check-out-date" required />
+                            </label>
+                      </div>
+                      
+                        <div class="box3">
+                            <label>  Train Status
+                                <select name="accomodation">
+                                      <option value="">(select one)</option>
+                                      <option value="1"> Book Train Tickets</option>
+                                      <option value="2">Check PNR Status</option>
+                                      <option value="3">Live Train Status</option>
+                                      <option value="4"> All Offers</option>
+                                    </select>
+                                </label>
+                             
+                                <label>Number of Member <input type="number" name="age" min="1" max="120" class="room"/>
+                                  <label>Class Type
+                
+                                  <select name="accomodation">
+                                    <option value="">(select one)</option>
+                                    <option value="1"> All class</option>
+                                    <option value="2">Sleeper class</option>
+                                    <option value="3">Third AC</option>
+                                    <option value="4">Second AC</option>
+                                    <option value="4">First AC</option>
+                                    <option value="4">Second Seating</option>
+                                    <option value="4">First class</option>
+                                    <option value="4">Third AC Economy</option>
+                                  </select>
+                                        </label>
+                                </label> 
+                               
+                        </div>
+                        <input type="submit" value="Submit" />
+            
+                       
+                  </div>
+                  </fieldset>
+              </form>
+              <form action="" id="show3">
+                <fieldset>
+                  <div class="box">
+                    <div class="box1">
+                        <label>First Name 
+                            <input type="text" name="firstname" required /></label>
+                          <label>Last Name 
+                          <input type="text" name="lastname" required />
+                          </label>
+                          <label>Email
+                          <input type="email" name="email" required />
+                          </label>
+                       </div>
+                      <div class="box2">
+                        <label>Phone Number 
+                            <input type="text" name="phone" required />
+                            </label>
+                            
+                            <label>Check-in Date
+                            <input type="date" name="check-in-date" required />
+                            </label>
+                            <label>Check-out Date
+                            <input type="date" name="check-out-date" required />
+                            </label>
+                      </div>
+                      
+                        <div class="box3">
+                            <label> Accomodation Type
+                                <select name="accomodation">
+                                      <option value="">(select one)</option>
+                                      <option value="1">Hotel</option>
+                                      <option value="2">Self-Catered</option>
+                                      <option value="3">Hostel</option>
+                                      <option value="4">Guesthouse</option>
+                                    </select>
+                                </label>
+                             
+                                <label>Number of room <input type="number" name="age" min="1" max="120" class="room"/>
+                                  <label>Room Type
+                
+                                  <select name="accomodation">
+                                    <option value="">(select one)</option>
+                                    <option value="1"> Single Room</option>
+                                    <option value="2">Double Room</option>
+                                    <option value="3">Triple Room</option>
+                                    <option value="4">Quad Bedroom</option>
+                                  </select>
+                                        </label>
+                                </label> 
+                        </div>
+            
+                        <input type="submit" value="Submit" />
+                  </div>
+                  </fieldset>
+              </form>
+              <form action="" id="show4">
+              <h6>Coming Soon</h6>
+                  
+              </form>
+              <form action="" id="show5">
+                <h6>Coming Soon</h6>
+              </form>
+             </div>
+             <div class="bottom_nav">
+             
+              <img src="https://images.unsplash.com/photo-1657349226767-66c983d7df39?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <h3>Enjoy Up to 25% OFF* on Domestic & International Flights</h3>
+              
+             </div>
+            </div>
+          </div>
+          
+
+          <div class="page5">
+            <div class="swiper mySwiper">
+   <div class="swiper-wrapper">
+     <div class="swiper-slide">
+     <img src="slider1pic.avif" alt="">
+     </div>
+     
+     <div class="swiper-slide">
+       <img src="slider22.avif" alt="">
+     </div>
+     <div class="swiper-slide">
+       <img src="sliderpic2.avif" alt="">
+     </div>
+     <div class="swiper-slide">
+       <img src="sliderpic3.avif" alt="">
+     </div>
+     <div class="swiper-slide">
+       <img src="sliderpic4.avif" alt="">
+     </div>
+     <div class="swiper-slide">
+       <img src="sliderpic5.avif" alt="">
+     </div>
+     
+   </div>
+   <div class="swiper-button-next"></div>
+   <div class="swiper-button-prev"></div>
+   <div class="swiper-pagination"></div>
+           </div>
+         </div>
+
+          <div class="page3" id="page3">
+            <div class="Offers">
+          <div class="offer_nav">
+            <div class="offer_nav_l">
+              <h2>Offers  </h2>
+            </div>
+            <div class="offer_nav_m">
+             <a href="#"> <h5>All Offers  </h5> </a>
+             <a href="#">  <h5>  Bank Offers </h5> </a>
+             <a href="#"> <h5> Flights </h5> </a>
+             <a href="#"> <h5>  Hotels </h5> </a>
+             <a href="#"><h5>  Holidays </h5> </a>
+             <a href="#"> <h5>  Trains</h5> </a>
+            </div>
+            <div class="offer_nav_r">
+              <h2>VIEW ALL </h2>
+            </div>
+          </div>    
+          <div class="offerbox">
+           <div class="line1">
+            <div id="off_box" class="off_box1">
+              <div class="imgbox1">
+                <img src="plain1picOffer.avif" alt="">
+
+                <div class="book-box">
+                  <h4>T&C's Apply</h4>
+                 
+                </div>
+              </div>
+              <div class="hadding_box">
+                <h4>INTL FLIGHTS</h4>
+                <h3>LIVE NOW :</h3>
+                <h6>Enjoy Up to 25% OFF* on Domestic & International Flights</h6>
+
+                <button>BOOK NOW</button>
+              </div>
+          
+            </div>
+            <div id="off_box" class="off_box2">
+              <div class="imgbox2">
+                <img src="hdfcbankpic.avif" alt="">
+                <div class="book-box">
+                  <h4>T&C's Apply</h4>
+                </div>
+              </div>
+              <div class="hadding_box">
+                <h4>INTLFLIGHTS</h4>
+                <h3>Grab up to ₹30,000 OFF*:</h3>
+                <h6>Grab up to ₹30,000 OFF* on flights.
+                </h6>
+                <button>BOOK NOW</button>
+              </div>
+            </div>
+            
+           </div>
+           <div class="line2">
+            <div id="off_box" class="off_box3">
+              <div class="imgbox3">
+                <img src="Hollydayoffpic.avif" alt="">
+                <div class="book-box">
+                  <h4>T&C's Apply</h4>
+                 
+                </div>
+              </div>
+              <div class="hadding_box">
+                <h4>INTLFLIGHTS</h4>
+                <h3>LIVE NOW :</h3>
+                <h6>Enjoy Up to 25% OFF* on Domestic & International Flights</h6>
+                <button>BOOK NOW</button>
+              </div>
+            </div>
+            <div id="off_box" class="off_box4">
+              <div class="imgbox4">
+                <img src="vistraOffpic.avif" alt="">
+                <div class="book-box">
+                  <h4>T&C's Apply</h4>
+                 
+                </div>
+              </div>
+              <div class="hadding_box">
+                <h4>INTLFLIGHTS</h4>
+                <h3>New Flight by Vistara:</h3>
+                <h6>Now book Vistara flights connecting Delhi & Bali.</h6>
+                <button>BOOK NOW</button>
+              </div>
+            </div>
+            
+           </div>
+           <div class="line3">
+            <div id="off_box" class="off_box5">
+              <div class="imgbox5">
+                <img src="Raditionofferpic.avif" alt="">
+                <div class="book-box">
+                  <h4>T&C's Apply</h4>
+                </div>
+              </div>
+              <div class="hadding_box">
+                <h4>INTLFLIGHTS</h4>
+                <h3>LIVE NOW :</h3>
+                <h6>Enjoy Up to 25% OFF* on Domestic & International Flights</h6>
+                <button>BOOK NOW</button>
+              </div>
+            </div>
+            <div id="off_box" class="off_box6">
+              <div class="imgbox6">
+                <img src="icicibankpic.avif" alt="">
+                <div class="book-box">
+                  <h4>T&C's Apply</h4>
+                 
+                </div>
+              </div>
+              <div class="hadding_box">
+                <h4>INTLFLIGHTS</h4>
+                <h3>Grab up to ₹30,000 OFF*:</h3>
+                <h6>Grab up to ₹30,000 OFF* on flights, hotels and holiday packages.</h6>
+                <button>BOOK NOW</button>
+              </div>
+            </div>
+            
+           </div>
+          </div>
+        </div>
+  
+
+          </div>
+
+          <!-- <div class="page4">
+                     <h1>Festive Deal Live Now !</h1>
+                     <h4>Grab Flat 35% Off! Use Code  KKXVFX </h4>
+                     
+          </div> -->
+
+          <!-- Swiper -->
+          
+</div>
+   
+  <!-- footer -->
+  <div class="footer" id="footer">
+    <footer class="footer-section">
+      <div class="container">
+          <div class="footer-cta pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div class="cta-text">
+                              <h4>Find us</h4>
+                              <span>S3-4, 1st floor, S.V. parisar-2, Kolar road, Bhopal, Madhya Pradesh 462016</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-phone"></i>
+                          <div class="cta-text">
+                              <h4>Call us</h4>
+                              <span>07610644444</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="far fa-envelope-open"></i>
+                          <div class="cta-text">
+                              <h4>Mail us</h4>
+                              <span>wanderfultoursntravels@gmail.com</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                              <a href="index.html">
+                                <img src="Wanderful logo.png" class="img-fluid" alt="logo"></a>
+                              
+                          </div>
+                          <div class="footer-text">
+                              <!-- <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                              elit,Lorem ipsum dolor sit amet.</p> -->
+                          </div>
+                          
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Useful Links</h3>
+                          </div>
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">about</a></li>
+                              <li><a href="#">services</a></li>
+                              <li><a href="#">portfolio</a></li>
+                              <li><a href="#">Contact</a></li>
+                              <li><a href="#">About us</a></li>
+                              <li><a href="#">Our Services</a></li>
+                              <li><a href="#">Expert Team</a></li>
+                              <li><a href="#">Contact us</a></li>
+                              <li><a href="#">Latest News</a></li>
+                          </ul>
+
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Subscribe</h3>
+                          </div>
+                          <div class="footer-text mb-25">
+                              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                          </div>
+                          <div class="subscribe-form">
+                              <form action="#">
+                                  <input type="text" placeholder="Email Address">
+                                  <button><i class="fab fa-telegram-plane"></i></button>
+                              </form>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+  </footer>
+   </div>
+ 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>
