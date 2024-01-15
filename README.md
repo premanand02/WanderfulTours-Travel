@@ -4,4 +4,4 @@
 
 | Train | Bus | Home |
 | ---| --- |---|
-|Book now|Book now|Book now|
+|[Book now](https://apps.apple.com/)|[Book now](https://apps.apple.com/)|[Book now](https://apps.apple.com/)|
